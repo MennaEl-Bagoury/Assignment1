@@ -1,0 +1,52 @@
+*1. What is the difference between forEach and for...of? When would you use each? (0.5 Grade)*
+-for each is a method for arrays, you can give it a function, and it runs that function for each item in the array,I can not use break or continue inside it , we use it if we doing something with every element like printing it
+
+-for...of It is a loop that works on any arrays, strings,we can use break or continue inside it we use it you if we might need to stop early or skip items.
+
+----------------------------------------------------------------------------------------
+
+
+*What is hoisting and what is the Temporal Dead Zone (TDZ)? Explain with examples.*
+-Hoisting is moving variable and function declarations to the top of their scope before code execution like
+console.log(x); // undefined
+var x = 5;
+-The TDZ :f you try to access the variable in this zone, you get a ReferenceError  //that what I understand
+
+----------------------------------------------------------------------------------------------------
+
+*What are the main differences between == and ===?*
+==  compares values 
+
+like: x=8  
+console.log(x==8)  //true
+
+===   compares type and value 
+like:
+x='8'
+console.log(x===8)  //false    wronge type
+
+--------------------------------------------------------------------------------------------
+*Explain how try-catch works and why it is important in async operations.*
+
+we can handle the error there instead of letting the program server crashes.
+try ---> lets you run code that might throw an error and if an error happens, we will go to the catch block.
+
+
+-------------------------------------------------------------------------------------
+
+*What’s the difference between type conversion and coercion? Provide examples of each.*
+conversion we manually convert a value from one type to another using functions like Number(), String(), or Boolean() and control it 
+
+like:
+let str = "123";
+let num = Number(str); 
+console.log(num);  
+
+
+
+Coercion is that java script automatically converts types when needed it happens behind the scenes
+
+like: 
+et result = "5" - 2; 
+console.log(result);   // output  3
+console.log(typeof result); // "number"
